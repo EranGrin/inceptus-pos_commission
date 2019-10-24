@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<odoo>
+
+    <data>
+        
+        <record id="action_form_pos_commission_change" model="ir.ui.view">
+            <field name="name">action.form.pos.commission.change</field>
+            <field name="model">commission.change</field>
+            <field name="arch" type="xml">
+                <form string="Chaneg Commission">
+                    <p class="oe_grey">
+                        Select Product and Add commission to change.
+                    </p>
+                    <group>
+                    <field name="product_id"/>
+                    <field name="commission"/>
+                    
+                    </group>
+                    <footer>
+                        <button string="Change" name="change_commission" type="object" default_focus="1" class="btn-primary"/>
+                        <button string="Cancel" class="btn-default" special="cancel"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+        
+        
+        <act_window
+        id="act_commission_change_id"
+        name="Change Commission"
+        res_model="commission.change"
+        src_model="pos.commission"
+        view_mode="form" view_type="form"
+        target="new"
+        key2="client_action_multi"/>
+        
+    </data>
+</odoo>

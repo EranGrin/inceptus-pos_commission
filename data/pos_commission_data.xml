@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+
+        <record id="ies_pos_commission_seq" model="ir.sequence">
+            <field name="name">Request for Invoice</field>
+            <field name="code">pos.commission.seq</field>
+            <field name="prefix">RFCI/%(year)s/%(month)s/</field>
+            <field eval="1" name="number_next"/>
+            <field eval="1" name="number_increment"/>
+            <field eval="3" name="padding"/>
+            <field eval="False" name="company_id"/>
+        </record>
+
+        <record id="pos_commission_account" model="account.account">
+            <field name="code">210001</field>
+            <field name="name">Commission Account</field>
+            <field name="type">other</field>
+            <field name="user_type_id" ref="account.data_account_type_expenses" />
+            <field name="company_id" ref="base.main_company" />
+        </record>
+
+        <record id="pos_commission_journal" model="account.journal">
+            <field name="name">Commission Journal</field>
+            <field name="code">RFCI</field>
+            <field name="type">purchase</field>
+            <field name="default_credit_account_id" ref="pos_commission_account"/>
+            <field name="default_debit_account_id" ref="pos_commission_account"/>
+            <field name="refund_sequence" eval="True"/>
+        </record>
+
+        <record id="base.main_company" model="res.company">
+            <field name="journal_id" ref="pos_commission_journal" />
+            <field name="account_id" ref="pos_commission_account" />
+        </record>
+        
+        <record id="email_template_edi_rfi" model="mail.template">
+            <field name="name">RFI - Send by Email</field>
+            <field name="email_from">${(object.create_uid.email and '%s &lt;%s&gt;' % (object.create_uid.name, object.create_uid.email) or '')|safe}</field>
+            <field name="subject">${object.company_id.name} Order (Ref ${object.name or 'n/a' })</field>
+            <field name="partner_to">${object.partner_id.id}</field>
+            <field name="model_id" ref="ies_pos_commission.model_pos_commission"/>
+            <field name="auto_delete" eval="True"/>
+            <field name="report_template" ref="ies_pos_commission.pos_commission_report_vendor"/>
+            <field name="report_name">RFI_${(object.name or '').replace('/','_')}</field>
+            <field name="lang">${object.partner_id.lang}</field>
+            <field name="body_html"><![CDATA[
+<p>Dear ${object.partner_id.name},</p>
+<p>
+Here is a request for invoice  <strong>${object.name}</strong>
+ amounting in <strong>${object.amount_total} ${object.currency_id.name}</strong>
+from ${object.company_id.name}.
+</p>
+
+<p>If you have any question, do not hesitate to contact us.</p>
+<p>Best regards,</p>
+]]></field>
+        </record>
+
+    </data>
+</odoo>

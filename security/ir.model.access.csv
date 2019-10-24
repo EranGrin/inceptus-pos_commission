@@ -1,0 +1,6 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_account_move,account.account.move,account.model_account_move,,1,1,1,0
+Access_account_move_line,account.model_account_move_line,account.model_account_move_line,,1,1,1,0
+access_account_journal,account.journal,account.model_account_journal,,1,1,0,0
+access_pos_commission_line,access_pos_commission_line,model_pos_commission_line,,1,1,1,1
+access_pos_commission,access_pos_commission,model_pos_commission,,1,1,1,1

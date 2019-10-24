@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="ies_account_invoice_inherited" model="ir.ui.view">
+            <field name="name">ies.account.invoice.inherited</field>
+            <field name="model">account.invoice</field>
+            <field name="inherit_id" ref="account.invoice_supplier_form" />
+            <field name="arch" type="xml">
+                <xpath expr="//button[@name='%(account.action_account_invoice_payment)d']" position="replace">
+                    <field name='commission_id' invisible='1'/>
+                    <button name="%(account.action_account_invoice_payment)d" type="action" states="open" string="Register Payment" 
+                    context="{'commission_id': commission_id}" groups="account.group_account_invoice" class="oe_highlight"/>
+                </xpath>
+                
+                <xpath expr="//button[@name='action_invoice_draft']" position="replace">
+                    <field name='is_commission' invisible='1'/>
+                    <button name="action_invoice_draft" attrs="{'invisible': ['|', ('is_commission', '=', True)]}" states="cancel" string="Set to Draft" type="object" groups="account.group_account_invoice"/>
+                </xpath>
+                
+                <xpath expr="//field[@name='invoice_line_ids']" position="attributes">
+                    <attribute name='attrs'>{'readonly': [('is_commission', '=', True)]}</attribute>
+                </xpath>
+                
+                <xpath expr="//button[@name='%(account.action_account_invoice_refund)d']" position="attributes">
+                    <attribute name='context'>{'commission_id': commission_id}}</attribute>
+                </xpath>
+                
+            </field>
+        </record>
+    </data>
+</odoo>

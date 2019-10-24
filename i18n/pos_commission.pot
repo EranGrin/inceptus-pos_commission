@@ -1,0 +1,483 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* pos_commission
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 7.0-20130415-111315\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-08-17 14:23+0000\n"
+"PO-Revision-Date: 2015-08-17 14:23+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: pos_commission
+#: report:commission.report:0
+msgid "Date :"
+msgstr ""
+
+#. module: pos_commission
+#: report:commission.report:0
+msgid "Supplier :"
+msgstr ""
+
+#. module: pos_commission
+#: view:account.voucher:0
+msgid "Commission Information"
+msgstr ""
+
+#. module: pos_commission
+#: view:account.voucher:0
+msgid "e.g. Invoice SAJ/0042"
+msgstr ""
+
+#. module: pos_commission
+#: view:account.voucher:0
+msgid "Payment Details"
+msgstr ""
+
+#. module: pos_commission
+#: view:account.voucher:0
+msgid "Pay"
+msgstr ""
+
+#. module: pos_commission
+#: view:account.voucher:0
+msgid "Payment Ref"
+msgstr ""
+
+#. module: pos_commission
+#: model:ir.actions.act_window,name:pos_commission.action_open_pos_commission
+#: model:ir.model,name:pos_commission.model_pos_commission_history
+#: model:ir.ui.menu,name:pos_commission.menu_pos_commission
+#: view:pos.commission.history:0
+#: view:res.partner:0
+msgid "POS Commission"
+msgstr ""
+
+#. module: pos_commission
+#: model:ir.actions.act_window,help:pos_commission.action_open_pos_commission
+msgid "<p class=\"oe_view_nocontent_create\">\n"
+"                Click to configure supplier wise product commission info \n"
+"              </p>\n"
+"            "
+msgstr ""
+
+#. module: pos_commission
+#: field:account.move.line,commission:0
+#: view:account.voucher:0
+#: field:account.voucher,commission:0
+#: report:commission.report:0
+#: model:ir.actions.report.xml,name:pos_commission.report_commission_report
+#: model:ir.model.fields,field_description:pos_commission.field_account_move_line_commission
+#: model:ir.model.fields,field_description:pos_commission.field_account_voucher_commission
+msgid "Commission"
+msgstr ""
+
+#. module: pos_commission
+#: view:account.voucher:0
+msgid "Payment Options"
+msgstr ""
+
+#. module: pos_commission
+#: report:commission.report:0
+msgid "Unit Price"
+msgstr ""
+
+#. module: pos_commission
+#: view:account.voucher:0
+msgid "Draft"
+msgstr ""
+
+#. module: pos_commission
+#: report:commission.report:0
+msgid "Name :"
+msgstr ""
+
+#. module: pos_commission
+#: model:ir.ui.menu,name:pos_commission.menu_pos_commission_supplier
+msgid "Supplier Commission"
+msgstr ""
+
+#. module: pos_commission
+#: view:account.voucher:0
+msgid "Draft Vouchers"
+msgstr ""
+
+#. module: pos_commission
+#: view:account.voucher:0
+msgid "Product Commission Info"
+msgstr ""
+
+#. module: pos_commission
+#: model:ir.model,name:pos_commission.model_pos_order_line
+msgid "Lines of Point of Sale"
+msgstr ""
+
+#. module: pos_commission
+#: view:account.voucher:0
+msgid "Status"
+msgstr ""
+
+#. module: pos_commission
+#: view:account.voucher:0
+msgid "Posted Vouchers"
+msgstr ""
+
+#. module: pos_commission
+#: view:account.voucher:0
+#: report:commission.report:0
+#: model:ir.model.fields,field_description:pos_commission.field_pos_commission_history_product_id
+#: field:pos.commission.history,product_id:0
+msgid "Product"
+msgstr ""
+
+#. module: pos_commission
+#: view:account.voucher:0
+msgid "Payment Method"
+msgstr ""
+
+#. module: pos_commission
+#: model:ir.model.fields,field_description:pos_commission.field_pos_commission_history_write_date
+#: field:pos.commission.history,write_date:0
+msgid "Write Date"
+msgstr ""
+
+#. module: pos_commission
+#: model:ir.model.fields,field_description:pos_commission.field_pos_commission_history_create_uid
+#: model:ir.model.fields,field_description:pos_commission.field_pos_commission_history_write_uid
+#: field:pos.commission.history,create_uid:0
+#: field:pos.commission.history,write_uid:0
+msgid "unknown"
+msgstr ""
+
+#. module: pos_commission
+#: view:account.voucher:0
+msgid "Journal"
+msgstr ""
+
+#. module: pos_commission
+#: model:ir.model.fields,field_description:pos_commission.field_pos_order_line_commission
+#: field:pos.order.line,commission:0
+msgid "Commission Amt"
+msgstr ""
+
+#. module: pos_commission
+#: view:account.voucher:0
+msgid "Internal Notes"
+msgstr ""
+
+#. module: pos_commission
+#: field:account.move.line,qty:0
+#: model:ir.model.fields,field_description:pos_commission.field_account_move_line_qty
+msgid "Qauntity"
+msgstr "Qauntity"
+
+#. module: pos_commission
+#: view:account.voucher:0
+msgid "Credits"
+msgstr ""
+
+#. module: pos_commission
+#: report:commission.report:0
+msgid "Total :"
+msgstr ""
+
+#. module: pos_commission
+#: model:ir.actions.act_window,help:pos_commission.action_vendor_commission_payment
+msgid "<p class=\"oe_view_nocontent_create\">\n"
+"                Click to create a new supplier commission payment.\n"
+"              </p><p>\n"
+"                OpenERP helps you easily track commission payments you make and the remaining balances you need to pay your suppliers.\n"
+"              </p>\n"
+"            "
+msgstr ""
+
+#. module: pos_commission
+#: view:account.voucher:0
+msgid "Are you sure to unreconcile and cancel this record ?"
+msgstr ""
+
+#. module: pos_commission
+#: view:account.voucher:0
+#: report:commission.report:0
+msgid "Date"
+msgstr ""
+
+#. module: pos_commission
+#: view:account.voucher:0
+msgid "Cancel Payment"
+msgstr ""
+
+#. module: pos_commission
+#: report:commission.report:0
+msgid "Quantity"
+msgstr ""
+
+#. module: pos_commission
+#: field:account.move.line,total:0
+#: model:ir.model.fields,field_description:pos_commission.field_account_move_line_total
+msgid "Subtotal"
+msgstr ""
+
+#. module: pos_commission
+#: model:ir.model.fields,field_description:pos_commission.field_res_partner_commission_line
+#: view:res.partner:0
+#: field:res.partner,commission_line:0
+msgid "Commission History"
+msgstr ""
+
+#. module: pos_commission
+#: view:account.voucher:0
+msgid "Search Vouchers"
+msgstr ""
+
+#. module: pos_commission
+#: view:account.voucher:0
+msgid "Posted"
+msgstr ""
+
+#. module: pos_commission
+#: view:account.voucher:0
+msgid "Currency Options"
+msgstr ""
+
+#. module: pos_commission
+#: view:account.voucher:0
+msgid "Supplier Invoices and Outstanding transactions"
+msgstr ""
+
+#. module: pos_commission
+#: report:commission.report:0
+msgid "Supplier Commission Report"
+msgstr ""
+
+#. module: pos_commission
+#: view:account.voucher:0
+msgid "Set to Draft"
+msgstr ""
+
+#. module: pos_commission
+#: model:ir.model,name:pos_commission.model_res_company
+msgid "Companies"
+msgstr ""
+
+#. module: pos_commission
+#: field:account.move.line,commission_per:0
+#: report:commission.report:0
+#: model:ir.model.fields,field_description:pos_commission.field_account_move_line_commission_per
+#: model:ir.model.fields,field_description:pos_commission.field_pos_commission_history_commission
+#: model:ir.model.fields,field_description:pos_commission.field_pos_order_line_commission_per
+#: model:ir.model.fields,field_description:pos_commission.field_res_partner_commission
+#: field:pos.commission.history,commission:0
+#: field:pos.order.line,commission_per:0
+#: field:res.partner,commission:0
+msgid "Commission(%)"
+msgstr ""
+
+#. module: pos_commission
+#: view:account.voucher:0
+msgid "Product Commission Details"
+msgstr ""
+
+#. module: pos_commission
+#: view:account.voucher:0
+#: model:ir.model,name:pos_commission.model_account_move_line
+msgid "Journal Items"
+msgstr ""
+
+#. module: pos_commission
+#: report:commission.report:0
+msgid "Net Total :"
+msgstr "Net Total :"
+
+#. module: pos_commission
+#: view:account.voucher:0
+msgid "Commission Voucher"
+msgstr ""
+
+#. module: pos_commission
+#: view:account.voucher:0
+msgid "e.g. 003/10"
+msgstr ""
+
+#. module: pos_commission
+#: view:account.voucher:0
+msgid "Unreconcile"
+msgstr ""
+
+#. module: pos_commission
+#: model:ir.actions.act_window,name:pos_commission.action_vendor_commission_payment
+#: model:ir.ui.menu,name:pos_commission.menu_action_vendor_commission_payment
+msgid "Supplier Commission Payment"
+msgstr ""
+
+#. module: pos_commission
+#: model:ir.model.fields,field_description:pos_commission.field_res_partner_s_date
+#: field:res.partner,s_date:0
+msgid "Commission Start Date"
+msgstr ""
+
+#. module: pos_commission
+#: model:ir.model.fields,field_description:pos_commission.field_pos_commission_history_e_date
+#: field:pos.commission.history,e_date:0
+msgid "To Date"
+msgstr ""
+
+#. module: pos_commission
+#: view:account.voucher:0
+msgid "Commission Payment"
+msgstr ""
+
+#. module: pos_commission
+#: field:account.move.line,price_unit:0
+#: model:ir.model.fields,field_description:pos_commission.field_account_move_line_price_unit
+msgid "Price Unit"
+msgstr ""
+
+#. module: pos_commission
+#: report:commission.report:0
+msgid "Payment Ref :"
+msgstr ""
+
+#. module: pos_commission
+#: report:commission.report:0
+msgid "Payment Method :"
+msgstr ""
+
+#. module: pos_commission
+#: field:account.move,shop_id:0
+#: field:account.move.line,shop_id:0
+#: field:account.voucher,shop_id:0
+#: model:ir.model.fields,field_description:pos_commission.field_account_move_line_shop_id
+#: model:ir.model.fields,field_description:pos_commission.field_account_move_shop_id
+#: model:ir.model.fields,field_description:pos_commission.field_account_voucher_shop_id
+msgid "Shop"
+msgstr ""
+
+#. module: pos_commission
+#: view:account.voucher:0
+msgid "Total Amount"
+msgstr ""
+
+#. module: pos_commission
+#: view:account.voucher:0
+#: report:commission.report:0
+msgid "Total"
+msgstr ""
+
+#. module: pos_commission
+#: model:ir.model,name:pos_commission.model_account_move
+msgid "Account Entry"
+msgstr ""
+
+#. module: pos_commission
+#: view:account.voucher:0
+msgid "Commission to Pay"
+msgstr ""
+
+#. module: pos_commission
+#: view:account.voucher:0
+msgid "Reference"
+msgstr ""
+
+#. module: pos_commission
+#: view:account.voucher:0
+msgid "Group By..."
+msgstr ""
+
+#. module: pos_commission
+#: model:ir.model.fields,field_description:pos_commission.field_res_company_account_id
+#: field:res.company,account_id:0
+msgid "Commission Expense Account"
+msgstr ""
+
+#. module: pos_commission
+#: view:account.voucher:0
+msgid "Total Allocation"
+msgstr ""
+
+#. module: pos_commission
+#: model:ir.model,name:pos_commission.model_account_voucher
+msgid "Accounting Voucher"
+msgstr ""
+
+#. module: pos_commission
+#: model:ir.model.fields,field_description:pos_commission.field_pos_commission_history_s_date
+#: field:pos.commission.history,s_date:0
+msgid "Valid From"
+msgstr ""
+
+#. module: pos_commission
+#: view:account.voucher:0
+msgid "Period"
+msgstr ""
+
+#. module: pos_commission
+#: view:account.voucher:0
+msgid "Commission to Recover"
+msgstr ""
+
+#. module: pos_commission
+#: view:account.voucher:0
+msgid "Voucher"
+msgstr ""
+
+#. module: pos_commission
+#: model:ir.model.fields,field_description:pos_commission.field_pos_commission_history_create_date
+#: field:pos.commission.history,create_date:0
+msgid "Create Date"
+msgstr ""
+
+#. module: pos_commission
+#: model:ir.model.fields,field_description:pos_commission.field_res_company_journal_id
+#: field:res.company,journal_id:0
+msgid "Commission Journal"
+msgstr ""
+
+#. module: pos_commission
+#: field:account.voucher,user_id:0
+#: model:ir.model.fields,field_description:pos_commission.field_account_voucher_user_id
+msgid "User"
+msgstr ""
+
+#. module: pos_commission
+#: view:account.voucher:0
+#: model:ir.model.fields,field_description:pos_commission.field_pos_commission_history_supplier_id
+#: model:ir.model.fields,field_description:pos_commission.field_pos_order_line_supplier_id
+#: field:pos.commission.history,supplier_id:0
+#: field:pos.order.line,supplier_id:0
+msgid "Supplier"
+msgstr ""
+
+#. module: pos_commission
+#: model:ir.model,name:pos_commission.model_res_partner
+msgid "Partner"
+msgstr ""
+
+#. module: pos_commission
+#: model:ir.model,name:pos_commission.model_pos_order
+msgid "Point of Sale"
+msgstr ""
+
+#. module: pos_commission
+#: model:ir.model.fields,field_description:pos_commission.field_pos_order_commission_id
+#: field:pos.order,commission_id:0
+msgid "Journal Entry"
+msgstr ""
+
+#. module: pos_commission
+#: field:account.voucher,product_lines:0
+#: model:ir.model.fields,field_description:pos_commission.field_account_voucher_product_lines
+msgid "Product Commission"
+msgstr ""
+
+#. module: pos_commission
+#: view:account.voucher:0
+msgid "Print Report"
+msgstr ""
+
