@@ -28,3 +28,8 @@ This module helps to manage such a situation with a very safe and professional m
 **Future Features**
 
 - To add compatibility with the future multishop module
+
+**FlowChart**
+
+
+![](/flowchart.png)
